@@ -16,7 +16,7 @@ int main(void)
     
     if(_fabs(delta)<ECART)
        nb_solution=1;
-    else if (delta>ECART)
+    else if(_fabs(delta)>ECART)
        nb_solution=2;
     else
        nb_solution=0;
