@@ -8,17 +8,10 @@
 
 int main(void)
 {
-    unsigned short int n1=0;
-	 unsigned short int n2=0;
-    unsigned short int i=0;
-    unsigned long  int r=(rand()%10)+1;
-    unsigned short int val1=0;
-    unsigned short int val2=0;
-    unsigned short int a=0;
-    unsigned long int S1=0;													
-    unsigned long int S2=0;
-    unsigned long int S3=0;
-    unsigned long int S4=0;
+    unsigned short int n1=0,n2=0,i=0;
+    unsigned long  int r=rand()%10+1;
+    unsigned short int val1=0,val2=0,a=0;
+    unsigned long  int S1=0,S2=0,S3=0,S4=0;
     
 
     while(n1<9999){
