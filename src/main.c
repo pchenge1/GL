@@ -10,7 +10,7 @@ int main(void)
   unsigned long int S=0;
 
 
-  while(n!=1){
+  do{
   if(n%2==0){
   S=S+n;
  }
@@ -25,6 +25,7 @@ int main(void)
     S=0;
    }
  }
+}while(n!=1)
   
 
 
