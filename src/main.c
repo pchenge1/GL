@@ -4,11 +4,11 @@
 #include "my_header.h"  
 #include "TP_lib.h"
 
-#define n=LancerDe()
 int main(void)
 {
-  unsigned char n;
+  unsigned char n=rand()%6+1;
   unsigned long int S=0;
+
 
   while(n!=1){
   if(n%2==0){
@@ -17,7 +17,7 @@ int main(void)
   else if(n==3){
   S=S*2;
  }
-  else (n==5){
+  else {
     if(S>=2){
     S=S-2;
    }
