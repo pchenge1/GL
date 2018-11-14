@@ -8,7 +8,7 @@
 int main(void)
 {
     unsigned short int n1=0;
-	unsigned short int n2=0;
+	 unsigned short int n2=0;
     unsigned short int i=0;
     unsigned long  int r=(rand()%10)+1;
     unsigned short int val1=0;
