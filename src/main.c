@@ -5,12 +5,13 @@
 #define   seuil 3
 #define   SEUILH -100
 #define   SEUILB 200 
-#define   N 5 
+
 int main(void)
 {
-    unsigned char bin[10]={0,1,2,3,4,5,6,7,8,9},i1,i2,i3,i4,i5;
-	unsigned int  sat[10]=rand(),dist[10],a[5]={1,5,9,8,11},b[5],miroir[5];
-   
+    unsigned long long int bin[10]={0,1,2,3,4,5,6,7,8,9};
+	unsigned char i1,i2,i3,N,M;
+    int  sat[10]={rand()%200-200} ,dist[10]={1,9,9,8,1,2,0,9,7,3};
+    int  a[5]={1,5,9,8,11},b[5],miroir[6]={11,22,33};
     for(i1=0;i1<10;i1=i1+1)
     {
       if(bin[i1]>seuil)
@@ -29,22 +30,19 @@ int main(void)
         sat[i2]=sat[i2];
     }
 
-    for(i3=0;i3<10;i3=i3+1)
+    for(i3=9;i3>1;i3=i3-1)
     {
-        if(dist[i3]!=0)
-        dist[i3]=distance;
-        else
-        dist[i3]=0;
+        dist[i3]=dis[i3]-dis[i3-1];
     }
 
-    for(i4=0;i4<10;i4=i4+1)
+    for(N=0;N<5;N=N+1)
     {
-      b[]=a[];
+      b[N]=a[4-N];
     }
 
-    for(i5=0;i5<10;i5=i5+1)
+    for(M=0;M<3;M=M+1)
     {
-     miroir
+     miroir[M]=miroir[5-M];
     }
 
     return 0;					  
