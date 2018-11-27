@@ -9,7 +9,7 @@
 int main(void)
 {
     unsigned long long int bin[10]={0,1,2,3,4,5,6,7,8,9};
-	unsigned char i1,i2,i3,N,M;
+	unsigned char i1,i2,i3,n,m;
     int  sat[10]={rand()%200-200} ,dist[10]={1,9,9,8,1,2,0,9,7,3};
     int  a[5]={1,5,9,8,11},b[5],miroir[6]={11,22,33};
     for(i1=0;i1<10;i1=i1+1)
@@ -35,14 +35,14 @@ int main(void)
         dist[i3]=dis[i3]-dis[i3-1];
     }
 
-    for(N=0;N<5;N=N+1)
+    for(n=0;n<5;n=n+1)
     {
-      b[N]=a[4-N];
+      b[n]=a[4-n];
     }
 
-    for(M=0;M<3;M=M+1)
+    for(m=0;m<3;m=m+1)
     {
-     miroir[M]=miroir[5-M];
+     miroir[m]=miroir[5-m];
     }
 
     return 0;					  
