@@ -21,6 +21,9 @@ int main(void)
     }
     
     for(i2=0;i2<10;i2=i2+1)
+	sat[i2]= rand()%200-200;
+	
+    for(i2=0;i2<10;i2=i2+1)
 	{
 		if(sat[i2]>SEUILH)
         sat[i2]=SEUILH;
