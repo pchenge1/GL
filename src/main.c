@@ -8,25 +8,25 @@ int main(void)
 {
    void initialiserTirage(void)
    short tirerNumero(void)
-   unsigned char joueur[6]={11,22,33,44,3,9},gagnant[6]={0,0,0,0,0,0};
-   unsigned char i,j,k,m,g=0;
-
-   for(i=0,j=0;i<6,j<6;i++,j++)
+   unsigned char joueur[6]={11,22,33,44,3,9},gagnant[6]={3};
+   unsigned char i,j,m,g=0;
+  
+   for(m=0;m<100;m++)
    {
-       if(joueur[i]=gagnant[j])
-       g++;
-   }
 
-      for(k=0;k<6;k++)
+      for(j=0;j<6;j++)
    {
        initialiserTirage();
-       gagnant[k]=tirerNumero();
+       gagnant[j]=tirerNumero();
    }
-
-    for(m=0;m<100;m++)
+     
+      for(i=0,j=0;i<6,j<6;i++,j++)
    {
-      
+       if(joueur[i]==gagnant[j])
+       g++;
    }
+   }
+   
    
 
     
