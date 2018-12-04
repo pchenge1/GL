@@ -2,7 +2,7 @@
 //  Copyright (c) 2018 Antoine Tran Tan
 //
 
-//#include "my_header.h"
+#include "my_header.h"
 
 int main(void)
 {
@@ -19,10 +19,8 @@ int main(void)
 	
 	printf("Je m'appelle %s %s et j'ai %u ans",nom,prenom,annee_de_naissance); 
 	
+    getchar();
 	
-
-	
-
 	
 	return 0;
 }
