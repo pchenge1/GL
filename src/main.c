@@ -11,8 +11,9 @@ int main(void)
    unsigned char x[5]={10,30,30,43,35},y[5]={20,20,40,53,65},a[10]; 
    sscanf(phrase"%*s %*s %s %*s %u %*s %*s %*s %u %u %u %u %u %u %u %u %u %u",nom_fig,%nb_pts,x[1],y[1],x[2],y[2],x[3],y[3],x[4],y[4],x[5],y[5]);
    if(nb_pts<5)
-   for(i=0,i<10,i++)
-   for(i=0,i<10,i++)
+   for(i=2*nb_pts,i<10,i++)
+   {a[10]=-1;}
+   for(j=0,j<10,j++)
    if(x[i]>0)
    sscanf(phrase,"%s",&x[i])
    else
