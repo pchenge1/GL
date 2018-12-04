@@ -14,11 +14,12 @@ int main(void)
    for(i=2*nb_pts,i<10,i++)
    {a[10]=-1;}
    for(j=0,j<10,j++)
-   if(x[i]>0)
-   sscanf(phrase,"%s",&x[i])
+   {
+   if(j%2==0)
+   x[i/2]=a[j];
    else
-   sscanf(phrase,"%*s")
-  
+   
+   }
    sprintf(chaine,"La figure %s possede %u somments",nom_fig,&nb_pts);
    MessagePopup(pharse);
    return 0;
