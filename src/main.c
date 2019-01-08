@@ -6,7 +6,8 @@
 int main(void)
 {
    char nom_fig[80],chaine[80];
-   char phrase[80]="La figure pentagone_B possede 5 sommets avec cordonnees 10 20 30 20 30 40 43 53 35 65";
+   char ligne1[80]="Nom:triangle_B";
+   char ligne2[80]="Nb points:5";
    unsigned char nb_pts=rand()%5+3,i,j;
    unsigned char x[5],y[5],a[10]; 
    sscanf(phrase"%*s %*s %s %*s %u %*s %*s %*s %u %u %u %u %u %u %u %u %u %u",nom_fig,%nb_pts,&a[10],&a[10],&a[10],&a[10],&a[10],&a[10],&a[10],&a[10],&a[10],&a[10]);
