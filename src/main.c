@@ -6,10 +6,12 @@
 int main(void)
 {
    char nom_fig[80],chaine[80];
-   char ligne1[80]="Nom:triangle_B";
+   char ligne1[80]="Nom:pentagone_B";
    char ligne2[80]="Nb points:5";
+   char ligne3[80]="Cordonnees：10 20 30 20 30 40 43 53 35 65“；
    unsigned char nb_pts=rand()%5+3,i,j;
    unsigned char x[5],y[5],a[10]; 
+   sscanf
    sscanf(phrase"%*s %*s %s %*s %u %*s %*s %*s %u %u %u %u %u %u %u %u %u %u",nom_fig,%nb_pts,&a[10],&a[10],&a[10],&a[10],&a[10],&a[10],&a[10],&a[10],&a[10],&a[10]);
       for(j=0,j<10,j++);
       {
